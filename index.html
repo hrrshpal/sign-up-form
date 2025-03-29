@@ -27,36 +27,36 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
             
+            <p id="form-heading">Let's do this!</p>
             <div id="form">
-                <legend>Let's do this!</legend>
-
+    
                 <div id="left-side">
                     <div id="fields">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" required minlength="3">
                     </div>
                     <div id="fields">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div id="fields">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
                     </div>
                 </div>
 
                 <div id="right-side">
                     <div id="fields">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" required minlength="3">
                     </div>
                     <div id="fields">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" required minlength="10">
                     </div>
                     <div id="fields">
                         <label for="password">CONFIRM PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
                     </div>
                 </div>
             </div>
